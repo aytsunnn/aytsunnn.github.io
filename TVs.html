@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" media="(prefers-color-scheme: light)" content="rgb(255 0 0)">
+	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="rgb(0 0 0)">
+	<link rel="stylesheet" href="css/styleTVs.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/modal_vox.css">
+	<link rel="shortcut icon" href="img/sign.png" />
+	<title>Telecanals</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__logo">
+			<img src="img/sign.png" alt="logo">
+			<p class="header__logo-p">Видеoсервис</p>
+		</div>
+
+		<form>
+			<input type="text" placeholder="Поиск..." class="header__search">
+			<input type="submit" value="Найти" class="header__search-btn">
+		</form>
+
+		<form>
+			<input type="button" value="Войти" class="header__login" id="open-modal-btn">
+		</form>
+	</header>
+
+	<nav class="tabs">
+		<a href="index.html" class="films">Фильмы</a>
+		<a href="TVs.html" class="TV">Телеканалы</a>
+	</nav>
+
+	<main>
+	<div class="shows">
+		<div class="shows__block">
+			<div class="left">
+				<img src="img/first-chanel.png" alt="" id="first-chanel">
+			</div>
+
+			<div class="right">
+				<p class="block__title">Первый канал</p>
+				<div class="right__text">
+					<div class="right__text-red">
+						<p class="block__time">13:00</p>
+						<p class="block__show-name">Новости (с субтитрами)</p>
+					</div>
+					<div class="right__text-basic">
+						<p class="block__time">14:00</p>
+						<p class="block__show-name">Давай поженимся</p>
+					</div>
+					<div class="right__text-basic">
+						<p class="block__time">15:00</p>
+						<p class="block__show-name">Другие новости</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shows__block">
+			<div class="left">
+				<img src="img/2x2.png" alt="" id="first-chanel">
+			</div>
+
+			<div class="right">
+				<p class="block__title">2x2</p>
+				<div class="right__text">
+					<div class="right__text-red">
+						<p class="block__time">13:00</p>
+						<p class="block__show-name">МУЛЬТ ТВ. Сезон 4, 7 серия (с субтитрами)</p>
+					</div>
+					<div class="right__text-basic">
+						<p class="block__time">14:00</p>
+						<p class="block__show-name">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+					</div>
+					<div class="right__text-basic">
+						<p class="block__time">15:00</p>
+						<p class="block__show-name">БУРДАШЕВ. Сезон 1, 20 серия</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shows__block">
+			<div class="left">
+				<img src="img/green-logo.png" alt="" id="first-chanel">
+			</div>
+
+			<div class="right">
+				<p class="block__title">tv3</p>
+				<div class="right__text">
+					<div class="right__text-red">
+						<p class="block__time">13:00</p>
+						<p class="block__show-name">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+					</div>
+					<div class="right__text-basic">
+						<p class="block__time">14:00</p>
+						<p class="block__show-name">ДЕНЬ. Главные темы</p>
+					</div>
+					<div class="right__text-basic">
+						<p class="block__time">15:00</p>
+						<p class="block__show-name">Главные новости</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shows__block">
+			<div class="left">
+				<img src="img/amedia.png" alt="" id="first-chanel">
+			</div>
+
+			<div class="right">
+				<p class="block__title">Amedia</p>
+				<div class="right__text">
+					<div class="right__text-red">
+						<p class="block__time">13:00</p>
+						<p class="block__show-name">Клиент всегда мёртв</p>
+					</div>
+					<div class="right__text-basic">
+						<p class="block__time">14:00</p>
+						<p class="block__show-name">Голодные игры: Сойка-пересмешница. Часть I</p>
+					</div>
+					<div class="right__text-basic">
+						<p class="block__time">15:00</p>
+						<p class="block__show-name">Секс в большом городе</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</main>
+
+	<div class="modal" id="my-modal">
+		<div class="modal__box">
+				<p class="modal__box-center">Вход</p>
+				<div>
+					<form class="main-form">
+						<p><input type="text" placeholder="Логин" class="input"></p>
+						<p><input type="text" placeholder="Пароль" class="input"></p>
+				</div>
+				<div id="dialog__p">
+				<div>
+					<input type="checkbox" name="remember" id="check1">
+					<div class="checkmark"><p>&#10004;</p></div>
+				</div>
+				<div>
+					<label for="remember" id="remember">Запомнить</label>
+				</div>
+			</div>
+				<div class="modal__box-center">
+					<input type="submit" value="Войти" class="submit-login">
+				</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="convert">
+			<img src="img/htc-cs-logo.png" id="footer__image">
+		<div class="footer__contacts">
+			<p class="footer__text">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)
+			</p>
+			<p class="footer__text">+7 (3412) 93-88-61, 43-29-29</p>
+			<p class="footer__text" id="htc">htc-cs.ru</p>
+		</div>
+		</div>
+		
+	</footer>
+
+	<script src="/Users/User/Desktop/1/script/index.js"></script>
+</body>
+</html>
